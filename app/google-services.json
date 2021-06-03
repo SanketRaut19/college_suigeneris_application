@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633080778943",
+    "firebase_url": "https://suigeneris-fb0ad-default-rtdb.firebaseio.com",
+    "project_id": "suigeneris-fb0ad",
+    "storage_bucket": "suigeneris-fb0ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633080778943:android:857a110091b80c1aafb60a",
+        "android_client_info": {
+          "package_name": "com.example.suigenris"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633080778943-mh4vp58u27pdbgvoenpck7oith5q4u5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWF71bs9yOwOE330mqQm1UP-pHVZy11bY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633080778943-mh4vp58u27pdbgvoenpck7oith5q4u5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

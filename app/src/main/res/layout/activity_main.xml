@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trial2"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_main_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <View
+        android:id="@+id/main_view"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="230dp"
+        android:alpha="0.7"
+        android:background="@drawable/login_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_emaill"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view"
+        app:layout_constraintEnd_toEndOf="@+id/main_view"
+        app:layout_constraintStart_toStartOf="@+id/main_view"
+        app:layout_constraintTop_toTopOf="@+id/main_view"
+        app:layout_constraintVertical_bias="0.165">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_passwordd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view"
+        app:layout_constraintEnd_toEndOf="@+id/main_view"
+        app:layout_constraintStart_toStartOf="@+id/main_view"
+        app:layout_constraintTop_toBottomOf="@+id/main_emaill"
+        app:layout_constraintVertical_bias="0.147">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_upper_case"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view"
+        app:layout_constraintEnd_toEndOf="@+id/main_view"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/main_view"
+        app:layout_constraintTop_toBottomOf="@+id/main_passwordd"
+        app:layout_constraintVertical_bias="0.636"
+        android:background="@drawable/coustom_botton"/>
+
+    <ImageView
+        android:id="@+id/main_iv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_emaill"
+        app:layout_constraintEnd_toEndOf="@+id/main_emaill"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="@+id/main_emaill"
+        app:layout_constraintTop_toTopOf="@+id/main_emaill"
+        app:srcCompat="@drawable/baseline_email_black_36dp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user_register"
+        android:textColor="@color/Gold"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_view"
+        app:layout_constraintVertical_bias="0.927" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

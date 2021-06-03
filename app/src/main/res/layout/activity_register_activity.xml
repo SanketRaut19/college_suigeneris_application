@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trial2"
+    tools:context=".Register_activity">
+
+    <View
+        android:id="@+id/reg_view"
+        android:layout_width="340dp"
+        android:layout_height="490dp"
+        android:alpha="0.6"
+        android:background="@drawable/reg_view"
+        app:layout_constraintBottom_toTopOf="@+id/tv_ald_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Spinner
+        android:id="@+id/reg_post"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_view"
+        app:layout_constraintEnd_toEndOf="@+id/reg_view"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/reg_view"
+        app:layout_constraintTop_toTopOf="@+id/reg_view"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_namee"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_view"
+        app:layout_constraintEnd_toEndOf="@+id/reg_view"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/reg_view"
+        app:layout_constraintTop_toBottomOf="@+id/reg_post"
+        app:layout_constraintVertical_bias="0.088">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_name"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_emaill"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_view"
+        app:layout_constraintEnd_toEndOf="@+id/reg_view"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/reg_view"
+        app:layout_constraintTop_toBottomOf="@+id/reg_namee"
+        app:layout_constraintVertical_bias="0.116">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+
+            android:id="@+id/reg_email"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_passwordd"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_view"
+        app:layout_constraintEnd_toEndOf="@+id/reg_view"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/reg_view"
+        app:layout_constraintTop_toBottomOf="@+id/reg_emaill"
+        app:layout_constraintVertical_bias="0.161"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_password"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_reg_cpp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_view"
+        app:layout_constraintEnd_toEndOf="@+id/reg_view"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/reg_view"
+        app:layout_constraintTop_toBottomOf="@+id/reg_passwordd"
+        app:layout_constraintVertical_bias="0.282"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_reg_cp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="confirm password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reg_button"
+        android:text="register"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_view"
+        app:layout_constraintEnd_toEndOf="@+id/reg_view"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/reg_view"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_cpp"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/tv_ald_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already registered? Login"
+        android:textColor="@color/Gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_view"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <ImageView
+        android:id="@+id/reg_iv1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_namee"
+        app:layout_constraintEnd_toEndOf="@+id/reg_namee"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="@+id/reg_namee"
+        app:layout_constraintTop_toTopOf="@+id/reg_namee"
+        app:layout_constraintVertical_bias="0.592"
+        app:srcCompat="@drawable/baseline_person_black_36dp" />
+
+    <ImageView
+        android:id="@+id/reg_iv2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/reg_emaill"
+        app:layout_constraintEnd_toEndOf="@+id/reg_emaill"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="@+id/reg_emaill"
+        app:layout_constraintTop_toTopOf="@+id/reg_emaill"
+        app:srcCompat="@drawable/baseline_email_black_36dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

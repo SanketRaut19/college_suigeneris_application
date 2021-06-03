@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">suiGENERiS</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_upper_case">LOGIN</string>
+    <string name="new_user_register">New User ? Register</string>
+    <string name="paid_amount">Paid Amount:<u></u></string>
+</resources>

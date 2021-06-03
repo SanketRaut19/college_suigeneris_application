@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trial2"
+    tools:context=".Qrcode_activity">
+
+
+    <ImageView
+        android:id="@+id/qr_code"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_view"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <View
+        android:id="@+id/main_view"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:alpha="0.7"
+        android:background="@drawable/login_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/name_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view"
+        app:layout_constraintEnd_toEndOf="@+id/main_view"
+        app:layout_constraintStart_toStartOf="@+id/main_view"
+        app:layout_constraintTop_toTopOf="@+id/main_view"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/event_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event : "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_view"
+        app:layout_constraintEnd_toEndOf="@+id/main_view"
+        app:layout_constraintStart_toStartOf="@+id/main_view"
+        app:layout_constraintTop_toBottomOf="@+id/name_qr" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
